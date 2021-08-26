@@ -67,11 +67,63 @@
           <hr />
         </div>
         <div class="col-md-10">
-            Form goes here
+            <form action="/">
+              <div class="form-group row">
+                <label for="firstName" class="col-md-2 col-form-label col-form-label">First Name</label>
+                <div class="col-md-10">
+                  <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                  <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="telephone" class="col-md-2 col-form-label">Contact Telephone</label>
+                <div class="col-5 col-md-3">
+                  <input type="text" name="areaCode" id="areaCode" class="form-control" placeholder="Area Code" />
+                </div>
+                <div class="col-7">
+                  <input type="text" name="telephone" id="telephone" class="form-control" placeholder="Telephone"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col offset-md-2">
+                  <span>May we contact you?</span>
+                  <div class="form-check form-check-inline">
+                    <label for="contactYes" class="form-check-label">Yes</label>
+                    <input type="radio" name="contactYes" id="contactYes" class="form-check-input" value="yes" checked>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label for="contactNo" class="form-check-label">No</label>
+                    <input type="radio" name="contactNo" id="contactNo" class="form-check-input" value="no">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                <div class="col-md-10">
+                  <textarea name="feedback" id="feedback" class="form-control" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                  <button type="submit" class="btn btn-primary">Send Feedback</button>
+                </div>
+              </div>
+            </form>
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="site-footer">
       <div class="container">
         <div class="row row-content">
           <div class="col-4 col-sm-2 offset-lg-1">
